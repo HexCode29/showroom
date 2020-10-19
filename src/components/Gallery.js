@@ -42,11 +42,11 @@ export default function Gallery(){
                         <Card style={{ width: '18rem' }}>
                             <Card.Img variant="top" src={doc.img} />
                             <Card.Body>
-                                <Card.Title>Car</Card.Title>
+                            <Card.Title>{doc.title}</Card.Title>
                                 <Card.Text>
                                     {doc.desc}
                                 </Card.Text>
-                                <Link to="/" variant="primary">Go somewhere</Link>
+                                <Link to="/contact" variant="primary">Make an Offer</Link>
                             </Card.Body>
                         </Card>
                     </div>
