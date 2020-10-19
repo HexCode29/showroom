@@ -1,25 +1,33 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import {BrowserRouter as Router, Route, Link, Switch} from "react-router-dom";
+import Home from "./components/Home";
+import About from "./components/About";
+import Contact from "./components/Contact";
+import Gallery from "./components/Gallery";
+
+
+
+
+function FourOFour(){
+  return(
+    <div>
+      <h1>Sorry, this page doesn't exist</h1>
+      <p><Link to="/">Go Back &larr;</Link></p>
+    </div>
+  )
+}
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <Switch>
+       <Route exact path="/" component={Home}/>
+       <Route exact path="/about" component={About}/>
+       <Route exact path="/contact" component={Contact}/>
+       <Route exact path="/gallery" component={Gallery}/>
+       <Route  component={FourOFour}/>
+      </Switch>
+    </Router>
   );
 }
 

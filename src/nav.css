@@ -1,0 +1,8 @@
+#nav a:hover{
+    background-color: #007bff;
+    color: white;
+}
+
+#nav a{
+    transition: background-color 800ms ease-in-out;
+}
