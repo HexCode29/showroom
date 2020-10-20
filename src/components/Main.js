@@ -53,7 +53,7 @@ export default function Main(){
                                     :
                                     <div id="contact"> 
                                         <Link to="/contact"><img id="wapp" src={whatsapp} alt="whatsapp" /></Link>
-                                        <a href={doc.facebook} target="_blank"><img id="fcbook" src={facebook} alt="facebook" /></a>
+                                        <a href={doc.facebook} ><img id="fcbook" src={facebook} alt="facebook" /></a>
                                     </div>
                                  }
                             </Card.Body>
@@ -64,7 +64,7 @@ export default function Main(){
         </div>
         <h4 style={h4Style}>View Location on Google Map</h4>
         <div style={iframeDiv}>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3447.619987536471!2d71.53226481444781!3d30.219391717243084!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x393b3554bd9acd6f%3A0xf750d4c15bce946a!2sAL%20MADNI%20MOTORs%20Main%20branch!5e0!3m2!1sen!2s!4v1603126275518!5m2!1sen!2s" width="100%" height="450" frameborder="0" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3447.619987536471!2d71.53226481444781!3d30.219391717243084!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x393b3554bd9acd6f%3A0xf750d4c15bce946a!2sAL%20MADNI%20MOTORs%20Main%20branch!5e0!3m2!1sen!2s!4v1603126275518!5m2!1sen!2s" title="map" width="100%" height="450" frameborder="0" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
         </div>
         </> 
     )
