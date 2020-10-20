@@ -1,5 +1,4 @@
 import React from "react";
-import "react-bootstrap";
 import Navigation from "./Nav";
 import Header from "./Header";
 import Main from "./Main";

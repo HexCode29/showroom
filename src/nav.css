@@ -1,8 +1,15 @@
-#nav a:hover{
-    background-color: #007bff;
-    color: white;
+#nav a:hover:not(.navbar-brand){
+    background-color: white;
+    color: black;
 }
 
 #nav a{
     transition: background-color 800ms ease-in-out;
+    color: white;
+    border-radius: 10px;
+}
+
+#logo{
+    width: 30px;
+    height: 30px;
 }

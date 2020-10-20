@@ -3,24 +3,20 @@ import {Link} from "react-router-dom";
 import "react-bootstrap";
 import {Card} from "react-bootstrap";
 import Navigation from "./Nav";
-
  
 export default function Gallery(){
     const[data, setData] = useState([]);
-
 
     useEffect(() => {
         async function getData(){
             fetch("https://hungry-hypatia-cef580.netlify.app/.netlify/functions/gallery/")
             .then((res) => res.json())
             .then((obj) => {
-                console.log(obj)
                 setData(obj)
             })
         }
         getData();
     }, [])
-
    
     const divStyle = {
         width: "100%",
@@ -31,20 +27,22 @@ export default function Gallery(){
         justifyItems: "center"
     }
 
-
+    const cardStyle = {
+      margin: "0 auto"
+    }
     return(
       <>  
         <Navigation/>
         <div style={divStyle}>
             {data.map((doc) => {
                 return(
-                    <div>
-                        <Card style={{ width: '18rem' }}>
+                    <div style={cardStyle}>
+                        <Card style={{ width: '18rem'}}>
                             <Card.Img variant="top" src={doc.img} />
                             <Card.Body>
                             <Card.Title>{doc.title}</Card.Title>
                                 <Card.Text>
-                                    {doc.desc}
+                                   {doc.desc}
                                 </Card.Text>
                                 <Link to="/contact" variant="primary">Make an Offer</Link>
                             </Card.Body>

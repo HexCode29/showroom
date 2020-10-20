@@ -1,6 +1,7 @@
 import React from "react";
 import "react-bootstrap";
 import {Nav} from 'react-bootstrap';
+import car from "../images/car.svg"
 // import styled from  "styled-components";
 import "../nav.css";
 import {Link} from "react-router-dom";
@@ -9,7 +10,7 @@ export default function Navigation(){
     return(
         <div id="nav">            
              <Nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
-                <Link class="navbar-brand" href="/">Al-Madni Motors</Link>
+                <Link class="navbar-brand" href="/">Al-Madni Motors <img id="logo" src={car} alt="logo"/></Link>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
