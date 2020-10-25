@@ -47,11 +47,11 @@ export default function Main(){
                             <Card.Title style={{textAlign: "center"}}>{doc.name}</Card.Title>
                                  {doc.whatsapp ?
                                     <div id="contact"> 
-                                        <Link to="/contact"><img id="wapp" src={whatsapp} alt="whatsapp" /></Link>
+                                        <Link to={`/contact/${doc.name.split(" ").join("-")}`}><img id="wapp" src={whatsapp} alt="whatsapp" /></Link>
                                     </div>    
                                     :
                                     <div id="contact"> 
-                                        <Link to="/contact"><img id="wapp" src={whatsapp} alt="whatsapp" /></Link>
+                                        <Link to={`/contact/${doc.name.split(" ").join("-")}`}><img id="wapp" src={whatsapp} alt="whatsapp" /></Link>
                                         <a href={doc.facebook} ><img id="fcbook" src={facebook} alt="facebook" /></a>
                                     </div>
                                  }
