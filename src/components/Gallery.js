@@ -9,7 +9,7 @@ export default function Gallery(){
 
     useEffect(() => {
         async function getData(){
-            fetch("http://localhost:8888/.netlify/functions/gallery/")
+            fetch("https://hungry-hypatia-cef580.netlify.app/.netlify/functions/gallery/")
             .then((res) => res.json())
             .then((obj) => {
                 setData(obj)
