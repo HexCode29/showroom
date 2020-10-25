@@ -2,7 +2,6 @@ import React from "react";
 import "react-bootstrap";
 import {Nav} from 'react-bootstrap';
 import car from "../images/car.svg"
-// import styled from  "styled-components";
 import "../nav.css";
 import {Link} from "react-router-dom";
 

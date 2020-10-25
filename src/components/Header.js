@@ -8,22 +8,24 @@ import {Button} from "react-bootstrap";
 const divStyle = {
     display: "grid",
     width: "100%",
-    height: "600px",
-    backgroundImage: `url(${ image })`,
-    backgroundSize: "cover",
     justifyItems: "center",
 }
 
 const linkStyle = {
     position: "absolute",
-    top: "50%",
+    top: "40%",
     left: "50%",
     transfrom: "translate(-50%,-50%)"
+}
+
+const imgStyle = {
+    width: "100%",
 }
 
 export default function Header(){
     return(
         <div style={divStyle}>
+          <img src={image} style={imgStyle} alt="header"/>
           <Link to="/gallery" style={linkStyle}><Button>View Cars</Button></Link>  
         </div>
     )
