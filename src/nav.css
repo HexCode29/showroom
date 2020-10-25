@@ -8,3 +8,11 @@
     color: black;
     border-radius: 10px;
 }
+
+
+.navbar-toggler-icon{
+    background-color: #ccc;
+    color: #ffd93b !important;
+    border: 1px solid #ffd93b;
+    border-radius: 5px;
+}

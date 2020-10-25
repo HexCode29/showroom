@@ -11,6 +11,7 @@ const divStyle = {
 
 const imgStyle = {
     width: "100%",
+    marginTop: "50px"
 }
 
 export default function Header(){
